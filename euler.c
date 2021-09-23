@@ -11,6 +11,18 @@ int problem1(){
   return sum;
 }
 
+int problem6(){
+  int sum_squared = 0;
+  int squares_summed = 0;
+  int i;
+  for (i = 1; i <= 100; i++){
+    sum_squared += i;
+    squares_summed += i*i;
+  }
+  return sum_squared * sum_squared - squares_summed;
+}
+
 int main(){
-  printf("problem1 = %d\n",problem1());
+  printf("problem 1 = %d\n",problem1());
+  printf("problem 6 = %d\n",problem6());
 }
